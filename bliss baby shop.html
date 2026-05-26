@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baby Bliss Clothing</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#fffafc;
+      color:#333;
+    }
+
+    header{
+      background:#ffb6c1;
+      padding:20px;
+      text-align:center;
+      color:white;
+    }
+
+    header h1{
+      font-size:40px;
+    }
+
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      background:white;
+      padding:15px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#ff69b4;
+      font-weight:bold;
+    }
+
+    .hero{
+      height:80vh;
+      background:url('https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?q=80&w=1200&auto=format&fit=crop') center/cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+    }
+
+    .hero-content{
+      background:rgba(0,0,0,0.5);
+      padding:40px;
+      border-radius:15px;
+    }
+
+    .hero h2{
+      font-size:50px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 25px;
+      background:#ff69b4;
+      color:white;
+      text-decoration:none;
+      border-radius:30px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ff1493;
+    }
+
+    .products{
+      padding:60px 8%;
+    }
+
+    .products h2{
+      text-align:center;
+      margin-bottom:40px;
+      color:#ff69b4;
+      font-size:35px;
+    }
+
+    .product-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .product-card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .product-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .product-card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+    }
+
+    .product-info{
+      padding:20px;
+      text-align:center;
+    }
+
+    .product-info h3{
+      margin-bottom:10px;
+      color:#444;
+    }
+
+    .product-info p{
+      color:#777;
+      margin-bottom:15px;
+    }
+
+    footer{
+      background:#ffb6c1;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+    @media(max-width:768px){
+      .hero h2{
+        font-size:35px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Baby Bliss Clothing</h1>
+    <p>Cute & Comfortable Baby Fashion</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">New Arrivals</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Adorable Baby Outfits</h2>
+      <p>Soft, stylish and made with love for your little ones.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Featured Collection</h2>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?q=80&w=900&auto=format&fit=crop">
+        <div class="product-info">
+          <h3>Pink Baby Dress</h3>
+          <p>Comfortable and stylish outfit for babies.</p>
+          <a href="#" class="btn">View Item</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?q=80&w=900&auto=format&fit=crop">
+        <div class="product-info">
+          <h3>Baby Winter Jacket</h3>
+          <p>Warm and soft jacket for cold seasons.</p>
+          <a href="#" class="btn">View Item</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?q=80&w=900&auto=format&fit=crop">
+        <div class="product-info">
+          <h3>Baby Casual Wear</h3>
+          <p>Everyday fashion designed for comfort.</p>
+          <a href="#" class="btn">View Item</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=900&auto=format&fit=crop">
+        <div class="product-info">
+          <h3>Baby Romper Set</h3>
+          <p>Soft cotton romper for your little angel.</p>
+          <a href="#" class="btn">View Item</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- ADD THIS SECTION BELOW YOUR PRODUCT SECTION -->
+
+<section class="gallery">
+    <h2>More Baby Outfit Collections</h2>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?q=80&w=900&auto=format&fit=crop">
+            <h3>Princess Baby Dress</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?q=80&w=900&auto=format&fit=crop">
+            <h3>Warm Baby Jacket</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?q=80&w=900&auto=format&fit=crop">
+            <h3>Casual Baby Wear</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=900&auto=format&fit=crop">
+            <h3>Soft Baby Romper</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=900&auto=format&fit=crop">
+            <h3>Baby Hoodie Set</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=900&auto=format&fit=crop">
+            <h3>Baby Sweater</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=900&auto=format&fit=crop">
+            <h3>Denim Baby Outfit</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=900&auto=format&fit=crop">
+            <h3>Colorful Baby T-Shirt</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=900&auto=format&fit=crop">
+            <h3>Baby Walking Shoes</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=900&auto=format&fit=crop">
+            <h3>Baby Cap Collection</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=900&auto=format&fit=crop">
+            <h3>Baby Socks Set</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=900&auto=format&fit=crop">
+            <h3>Baby Pajamas</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- ADD THIS CONTACT SECTION ABOVE FOOTER -->
+
+<section class="contact-section">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+        <p>📍 Nairobi, Kenya</p>
+        <p>📞 Call / WhatsApp: <strong>0700000000</strong></p>
+        <p>📧 babyblisskenya@gmail.com</p>
+    </div>
+</section>
+
+<!-- ADD THIS CSS IN YOUR STYLE SECTION -->
+
+<style>
+
+.gallery{
+    padding:60px 7%;
+    background:#fff;
+}
+
+.gallery h2{
+    text-align:center;
+    color:#ff1493;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.gallery-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.gallery-card:hover{
+    transform:scale(1.03);
+}
+
+.gallery-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.gallery-card h3{
+    text-align:center;
+    padding:18px;
+    color:#444;
+}
+
+.contact-section{
+    padding:60px 7%;
+    text-align:center;
+    background:#ffe4ef;
+}
+
+.contact-section h2{
+    color:#ff1493;
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+.contact-box{
+    background:white;
+    max-width:600px;
+    margin:auto;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-box p{
+    font-size:22px;
+    margin:15px 0;
+}
+
+</style>
+  </section>
+
+  <footer>
+    <p>© 2026 Baby Bliss Clothing | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
